@@ -1,27 +1,57 @@
+
 print("Выберите математическое действие:Сложение,Вычитание,Умножение,Деление,Вывести из квадратного корня,Логарифм,Возведение в степень,Округление в большую сторону,Округление в меньшую сторону")
 a=(input())
 import math
 if a=='Сложение':
-    print("Введите первое слагаемое")
-    a1=int(input())
-    print("Введите второе слагаемое")
-    a2=int(input())
+    print("Введите первое число")
+    a1=(input())
+    if a1=(a1.isdigìt())
+    print("Введите второе число")
+    a2=(input())
+    else: 
+        print("Введите второе число")
+        a1=(input())
+    if a2=(a2.isdigit())
     s=a1+a2
-    print("Ответ:",s)
+    else: 
+        print("Введите второе число")
+        a2=(input())
+        s=a1+a2
+    print(s)
 elif a=='Вычитание':
-    print('Введите первое слагаемое')
-    b=int(input())
-    print('Введите второе слагаемое')
-    b1=int(input())
-    f=b-b1
-    print("Ответ:",f)
+    print('Введите первое число')
+    b=(input())
+    if b=(b.isdigit()):
+        print('Введите второе число')
+        b1=(input())
+        if b1=(b1.isdigit())
+        f=b-b1
+        else:
+            print("Введите второе число")
+            b1=(input())
+            f=b-b1
+    else:
+        print("Введите первое число")
+        b=(input())
+        f=b-b1
+    print(f)
 elif a=='Умножение':
     print('Введите первое число')
-    c=int(input())
-    print('Введите второе число')
-    c1=int(input())
-    g=c*c1
-    print("Ответ:",g)
+    с=(input())
+    if c=(c.isdigit()):
+        print('Введите второе число')
+        c1=(input())
+        if c1=(c1.isdigit())
+        g=c-c1
+        else:
+            print("Введите второе число")
+            c1=(input())
+            g=c-c1
+    else:
+        print("Введите первое число")
+        b=(input())
+        g=c-c1
+    print(g)
 elif a=='Деление':
     print('Введите перове число')
     d=int(input())
@@ -31,33 +61,33 @@ elif a=='Деление':
         print('Деление невозможно')
     else:
         h=d//d1
-        print("Ответ:",h)
+        print(h)
 elif a=='Возведение в степень':
     print('Введите число')
     e=int(input())
     print('Введите степень в которую хотите возвести число')
     e1=int(input())
     j=e**e1
-    print("Ответ:",j)
+    print(j)
 elif a=='Логарифм':
     print('Введите число')
     r=int(input())
     print('Введите основание логарифма')
     r1=int(input())
     k=math.log(r,r1)
-    print("Ответ:",k)
+    print(k)
 elif a=='Вывести из квадратного корня':
     print('Введите число')
     t=int(input())
     l=math.sqrt(t)
-    print("Ответ:",l)
+    print(l)
 elif a=='Округление в большую сторону':
     print('Введите число')
     y=float(input())
     q=math.ceil(y)
-    print("Ответ:",q)
+    print(q)
 elif a=='Округление в меньшую сторону':
     print('Введите число')
     z=float(input())
     w=math.floor(z)
-    print("Ответ:",w)
+    print(w)
